@@ -33,13 +33,13 @@ ui <- fluidPage(
     ),
 
     mainPanel(
-      h1('Summary Views of Distributions'),
+      h1('First Scenario'),
       splitLayout(cellWidths = c("50%", "50%"), plotOutput("likelihood_distributions"),plotOutput("likelihood_differential")),
 
-      h1('Summary Views of Distributions (Alternative)'),
+      h1('Alternative Scenario'),
       splitLayout(cellWidths = c("50%", "50%"), plotOutput("likelihood_distributions_alt"),plotOutput("likelihood_differential_alt")),
 
-      h1('Statistical Inference Summary'),
+      h1('Comparision of Results for Scenarios'),
       tableOutput("table_summary"),
       tableOutput("table_summary_alt")
     )
